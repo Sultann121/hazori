@@ -10,7 +10,6 @@ const knex = require('knex')({
   client: 'pg',
   connection: process.env.DATABASE_URL || 'postgres://localhost/hazori'
 });
-
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
